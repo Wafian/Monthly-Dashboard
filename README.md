@@ -1,4 +1,38 @@
-# Monthly Dashboard — Expense Tracker
+# Monthly Dashboard
+
+Single-file, offline-first web apps. No build step — open the HTML files directly
+in a browser, or host them on GitHub Pages / Netlify / Vercel.
+
+## Apps
+- **`task-tracker.html`** — a TickTick-style task tracker (see below).
+- **`expense-tracker.html`** — an installable iPhone expense tracker (see below).
+
+---
+
+# Task Tracker
+
+A TickTick-style task tracker in a single HTML file (HTML + CSS + vanilla JS).
+Open `task-tracker.html` in any browser — no server or build step required.
+
+## Features
+- **Three-pane layout:** sidebar (views + lists) · task list (grouped by
+  Overdue / Today / Next 7 days / Later / No date) · detail panel.
+- **Views:** Today, All, Next 7 days, No date, Completed, plus per-list filters
+  (MyBL, Rider Pack, Creative, Brand).
+- **Priority** (P1–P4) shown as colored circular checkboxes; click to complete.
+- **Subtasks**, expandable inline and editable in the detail panel.
+- **Detail panel edits:** title, deadline, priority, status, list, internal /
+  external stakeholders, notes, and subtasks.
+- **Add tasks** from the top bar (Enter); **sort** toggle (deadline, then priority).
+- **Reset** button restores the original seed list.
+
+## Storage
+On-device via `localStorage` (key `tasks-v1`). Data stays in your browser; it
+seeds a starter list on first load.
+
+---
+
+# Expense Tracker
 
 A single-file, offline-first expense tracker built as an installable iPhone web app.
 No build step; open `expense-tracker.html` in a browser or add it to your Home Screen.
